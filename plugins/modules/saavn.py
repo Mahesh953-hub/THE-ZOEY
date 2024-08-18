@@ -8,7 +8,7 @@ import requests,os,wget
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import asyncio
 from info import LOG_CHANNEL
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs', url='https://t.me/Team_Netflix/33')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('ᴊᴏɪɴ ᴜs', url='https://t.me/CNNETWORKS')]])
 A = """{} with user id:- {} used /saavn command."""
 B = """{} with user id:- {} used /vsaavn command."""
 
@@ -22,15 +22,15 @@ START_MESSAGE = """
 
 
 𝐅𝐨𝐫 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 :-
-/ssong 𝐀𝐥𝐨𝐧𝐞✔️ =-= 𝐬𝐚𝐚𝐯𝐧 𝐦𝐩𝟑 𝐬𝐨𝐧𝐠
-/svideo 𝐀𝐥𝐨𝐧𝐞✔️ =-= 𝐬𝐚𝐚𝐯𝐧 𝐦𝐩𝟒 𝐬𝐨𝐧𝐠
-/ysong 𝐀𝐥𝐨𝐧𝐞✔️ =-= 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐦𝐩𝟑 𝐬𝐨𝐧𝐠
-/yvideo 𝐀𝐥𝐨𝐧𝐞✔️ =-= 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐦𝐩𝟒 𝐬𝐨𝐧𝐠
+/ssong Albele tange wale ✔️ =-= 𝐬𝐚𝐚𝐯𝐧 𝐦𝐩𝟑 𝐬𝐨𝐧𝐠
+/svideo Albele tange wale ✔️ =-= 𝐬𝐚𝐚𝐯𝐧 𝐦𝐩𝟒 𝐬𝐨𝐧𝐠
+/ysong Albele tange wale ✔️ =-= 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐦𝐩𝟑 𝐬𝐨𝐧𝐠
+/yvideo Albele tange wale ✔️ =-= 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐦𝐩𝟒 𝐬𝐨𝐧𝐠
 
-/𝐬𝐚𝐚𝐯𝐧 𝐀𝐥𝐨𝐧𝐞 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 ❌️
-/𝐯𝐦𝐩𝟒 𝐀𝐥𝐨𝐧𝐞 𝐔𝐧𝐝𝐨❌️
-/𝐲𝐬𝐨𝐧𝐠 𝐀𝐥𝐨𝐧𝐞 𝐒𝐨𝐧𝐠❌️
-/𝐲𝐯𝐢𝐝𝐞𝐨 𝐀𝐥𝐨𝐧𝐞 𝐍𝐞𝐰❌️
+/𝐬𝐚𝐚𝐯𝐧 Albele tange wale  𝐄𝐧𝐠𝐥𝐢𝐬𝐡 ❌️
+/𝐯𝐦𝐩𝟒 Albele tange wale  𝐔𝐧𝐝𝐨❌️
+/𝐲𝐬𝐨𝐧𝐠 Albele tange wale  𝐒𝐨𝐧𝐠❌️
+/𝐲𝐯𝐢𝐝𝐞𝐨 Albele tange wale  𝐍𝐞𝐰❌️
 
 𝐌𝐝𝐢𝐬𝐤 𝐋𝐢𝐧𝐤 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫
 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐧𝐝 𝐓𝐲𝐩𝐞 /𝐦 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮𝐫 𝐌𝐝𝐢𝐬𝐤 𝐋𝐢𝐧𝐤
@@ -125,7 +125,7 @@ async def song(client, message):
 async def r_message(client, message):
     mention = message.from_user.mention
     buttons = [[
-        InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/movie7xchat')
+        InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/MovieWorldop')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(START_MESSAGE.format(message.from_user.mention, message.chat.title),

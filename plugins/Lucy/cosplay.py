@@ -6,14 +6,14 @@ from info import BOT_USERNAME
 
 ZOEY = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/Lucy_Filter_bot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/TheZoeyBot?startgroup=true"),
     ],
 ]
 
 @Client.on_message(filters.command("cosplay"))
 async def cosplay(_,msg):
     img = requests.get("https://waifu-api.vercel.app").json()
-    await msg.reply_photo(img, caption=f"ᴄᴏsᴘʟᴀʏ ʙʏ ʟᴜᴄʏ", reply_markup=InlineKeyboardMarkup(ZOEY),)
+    await msg.reply_photo(img, caption=f"ᴄᴏsᴘʟᴀʏ ʙʏ ᴢᴏᴇʏ", reply_markup=InlineKeyboardMarkup(ZOEY),)
 
 
 
@@ -29,4 +29,4 @@ async def ncosplay(_,msg):
     else:
        ncosplay = requests.get("https://waifu-api.vercel.app/items/1").json()
 
-       await msg.reply_photo(ncosplay, caption=f"ᴄᴏsᴘʟᴀʏ ʙʏ ʟᴜᴄʏ", reply_markup=InlineKeyboardMarkup(ZOEY),)
+       await msg.reply_photo(ncosplay, caption=f"ᴄᴏsᴘʟᴀʏ ʙʏ ᴢᴏᴇʏ", reply_markup=InlineKeyboardMarkup(ZOEY),)

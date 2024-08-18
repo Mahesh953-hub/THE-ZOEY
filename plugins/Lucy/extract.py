@@ -37,7 +37,7 @@ async def shazam_(client, message):
     try:
         if not message.reply_to_message or not message.reply_to_message.video:
             return await message.reply_text("Reply to a video...")
-        thumbnail = wget.download("https://telegra.ph/file/f4f20a3a7b15d588fcc2a.jpg")
+        thumbnail = wget.download("https://telegra.ph/file/43f5ad6e66f5e825887ce.jpg")
         sd = await client.send_message(LOG_CHANNEL, text=f"#ᴠɪᴅ_ᴛᴏ_ᴀᴜᴅ\n\nʀᴇǫᴜᴇsᴛᴇᴅ ғʀᴏᴍ {message.from_user.mention}\n\nᴀᴜᴅɪᴏ: ❌")
         stime = time.time()
         msg = await message.reply_text("Cᴏɴᴠᴇʀᴛɪɴɢ ᴠɪᴅᴇᴏ ᴛᴏ ᴀᴜᴅɪᴏ...\n\nIᴛ ᴍᴀʏ ᴄᴀᴜsᴇs sᴏᴍᴇ ᴛɪᴍᴇ ᴅᴜᴇ ᴛᴏ ᴠɪᴅᴇᴏ ᴅᴜʀᴀᴛɪᴏɴ, sᴏ ᴘʟᴇᴀsᴇ ᴡ𝟾")

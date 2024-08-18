@@ -1,15 +1,15 @@
 import os
+from info import BOT_TOKEN, API_ID, API_HASH
 from PIL import Image
 from pyrogram import Client,filters 
 from pyrogram.types import (InlineKeyboardButton,  InlineKeyboardMarkup)
 
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
-
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-
-API_ID = int(os.environ.get("API_ID", 12345))
-
-API_HASH = os.environ.get("API_HASH", "")
+"""
+TOKEN = BOT_TOKEN
+ID = API_ID
+HASH = API_HASH
+"""
 app = Client(
         "pdf",
         bot_token=BOT_TOKEN,api_hash=API_HASH,

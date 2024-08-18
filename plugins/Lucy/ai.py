@@ -30,11 +30,6 @@ async def chatgpt(_, message):
     await txt.edit("💭")
     api_response, error_message = fetch_data(api_url_gpt, query)
     await txt.edit(api_response or error_message)
-
-
-
-
-
 @Client.on_message(filters.command(["bard", "gemini"]))
 async def bard(_, message):
     chat_id = message.chat.id
@@ -95,7 +90,7 @@ async def chat_gpt(bot, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "**ʜᴇʏ ʙᴀʙᴇ, ɪ ᴀᴍ ʟᴜᴄʏ ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏᴅᴀʏ?**"
+                "**ʜᴇʏ ʙᴀʙᴇ, ɪ ᴀᴍ ᴢᴏᴇʏ ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏᴅᴀʏ?**"
             )
         else:
             a = message.text.split(' ', 1)[1]

@@ -69,10 +69,10 @@ async def evaluate(bot, message):
     elif stdout:
         evaluation = stdout
     else:
-        evaluation = "Success"
+        evaluation = "sᴜᴄᴄᴇss"
     taken_time = round((time.time() - start_time), 3)
     output = evaluation.strip()
-    format_text = f"Output:\n{output}"
+    format_text = f"ᴏᴜᴛᴘᴜᴛ 💻:\n{output}"
     final_output = format_text
 	
     if len(final_output) > 4096:
