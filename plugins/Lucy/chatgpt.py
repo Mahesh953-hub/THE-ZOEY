@@ -4,7 +4,7 @@ from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters, Client
 from MukeshAPI import api
 
-@Client.on_message(filters.command(["chatgpt", "ai", "hey", "oey", "gpt"], prefixes=[".", "Z", "z", "", "S", "/"]))
+@Client.on_message(filters.command(["chatgpt"], prefixes=["/"]))
 async def chat_gpt(bot, message):
     try:
         await bot.send_chat_action(message.chat.id, ChatAction.TYPING)

@@ -20,7 +20,7 @@ def fetch_data(api_url: str, query: str) -> tuple:
     except Exception as e:
         return None, f"An error occurred: {str(e)}"
 
-@Client.on_message(filters.command(["openai", "ai", "chatgpt", "gpt", "solve"]))
+@Client.on_message(filters.command(["ai", "gpt", "solve"]))
 async def chatgpt(_, message):
     if len(message.command) < 2:
         return await message.reply_text("**Please provide a query.**")
@@ -82,7 +82,7 @@ async def bard(_, message):
             return await txt.edit(str(e))
 
 
-@Client.on_message(filters.command(["zoey","oey", "chat"],  prefixes=[".", "/", "Z", "!"]))
+@Client.on_message(filters.command(["zoey","oey"],  prefixes=[".", "/", "Z", "!"]))
 async def chat_gpt(bot, message):
     try:
         start_time = time.time()

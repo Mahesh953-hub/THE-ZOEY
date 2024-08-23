@@ -27,7 +27,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', '')
-OWNER_ID = environ.get('OWNER_ID', '6340125899')
+OWNER_ID = environ.get('OWNER_ID', '6656382786')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -85,13 +85,13 @@ AI_LOGS = int(environ.get("AI_LOGS", "-1001913690152")) #GIVE YOUR NEW LOG CHANN
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @SupremeScreen</b>")
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @MOVIEWORLDOP</b>")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Referal Settings
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMIUM_TIME', '1 week')
-OWNER_USERNAME = environ.get('OWNER_USERNAME', 'ONLY_KAILASHHH') # owner username without @
+OWNER_USERNAME = environ.get('OWNER_USERNAME', 'CNXOWNER') # owner username without @
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001913690152')) #Log channel id ( make sure bot is admin )
 DUMP_CHNL = int(environ.get('DUMP_CHNL', '-1001913690152'))
@@ -111,14 +111,14 @@ PORT = environ.get("PORT", "8080")
 BOT_USERNAME = environ.get("BOT_USERNAME", "Lucy_Filter_bot")
 BOT_NAME = environ.get("BOT_NAME", "𝐋ᴜᴄʏ")
 BOT_ID = environ.get("BOT_ID", "6040310745")
-S_GROUP = environ.get('S_GROUP', "CNNETWORKS")
-S_CHANNEL = environ.get('S_CHANNEL', "SupremeScreen")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/SupremeScreen')
+S_GROUP = environ.get('S_GROUP', "CN_DISCUSSION")
+S_CHANNEL = environ.get('S_CHANNEL', "CNNETWORKS")
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MOVIEWORLDOP')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CNNETWORKS')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_to_Download_7x/32') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @CNNETWORKS')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/SupremeScreen') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/MOVIEWORLDOP') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)

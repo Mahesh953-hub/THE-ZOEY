@@ -35,7 +35,7 @@ async def mute_user(bot, message):
                 f"<a href='tg://user?id={user_id}'>"
                 f"{user_first_name}"
                 "</a>"
-                " Acha huaa mute krr diya usko! 🤐"
+                " Ab ki Baar bola na toh seedha ban, Smjhaaa! 🤐"
             )
             await bot.send_message(LOG_CHANNEL, text=f"**MUTE**\n\n**USER**: <a href='tg://user?id={user_id}'>{user_first_name}</a>\n\n**USER ID**:`{user_id}`\n\n**PERMISSIONS: MUTED**\n\nin **CHAT NAME**: {message.chat.title}\n**CHAT ID** `{message.chat.id}`\n\n\n**POWERD BY:** {temp.B_LINK}")
         
