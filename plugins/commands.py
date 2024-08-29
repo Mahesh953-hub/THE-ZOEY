@@ -6,7 +6,7 @@ import random
 import asyncio
 import pytz
 from database.refer import referdb
-from Script import script, *
+from Script import script
 from datetime import datetime
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
