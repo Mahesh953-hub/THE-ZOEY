@@ -73,7 +73,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton(text="🏡", callback_data="start"),
                     InlineKeyboardButton(text="🛡", callback_data="group_info"),
-                    InlineKeyboardButton(text="💳", callback_data="about", callback_data=script.ABOUT_TXT),
+                    InlineKeyboardButton(text="💳", callback_data="about"),
                     InlineKeyboardButton(text="💸", callback_data="shortlink_info"),
                     InlineKeyboardButton(text="🖥", callback_data="main"),
                 ],[
